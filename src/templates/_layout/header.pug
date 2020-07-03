@@ -1,0 +1,47 @@
+<!-- ////////////// HEADER ////////////// -->
+header.bg-light.fixed-top
+	.container-fluid
+		nav.navbar.navbar-expand-lg.navbar-light
+			a.navbar-brand(href="#") 
+				img(src="./img/logo.png", alt="Logo")
+			.countdown
+				.text-success Auto refresh after
+					| 
+					strong.time 1800
+					| 
+					| seconds
+				progress(value="0" max="1800" id="progressBar")
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				span.fa.fa-bars
+			#fullStackMenu.collapse.navbar-collapse
+				.mr-auto
+				ul.navbar-nav
+					li.nav-item.name-line
+						a.innerbox#dropdownDoorLine.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") LINE 4 - RHR - Front of Door
+						.dropdown-menu.dropdown-menu-right(aria-labelledby="dropdownDoorLine")
+							a.dropdown-item(href="#") 
+								strong LINE 1
+								| 
+								| - FHL - Front of Door
+							a.dropdown-item(href="#") 
+								strong LINE 2
+								| 
+								| - FHR - Front of Door
+							a.dropdown-item(href="#") 
+								strong LINE 3
+								| 
+								| - RHL - Front of Door
+							a.dropdown-item(href="#") 
+								strong LINE 4
+								| 
+								| - RHR - Front of Door
+					li.nav-item.dropdown.ml-2
+						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							span Welcome
+								br 
+								strong Nguyen Pham
+						.dropdown-menu.dropdown-menu-right(aria-labelledby="dropdownFS")
+							a.dropdown-item(href="#") Change password
+							a.dropdown-item(href="#") Logout
+					
+<!-- ////////////// HEADER ////////////// -->
