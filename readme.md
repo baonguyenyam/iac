@@ -38,5 +38,5 @@ Install Components
     Email: baonguyenyam@gmail.com
     URL: fb.com/pham.nguyen.bao.nguyen,
     baonguyenyam.github.io/cv
-    GitHub: https://baonguyenyam.github.io/cv
+    GitHub: https://github.com/baonguyenyam
 ```
