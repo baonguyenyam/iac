@@ -13,33 +13,25 @@
     Email: baonguyenyam@gmail.com
     URL: fb.com/pham.nguyen.bao.nguyen,
     baonguyenyam.github.io/cv
-    GitHub: https://baonguyenyam.github.io/
+    GitHub: https://baonguyenyam.github.io/cv
 ```
-# Cài đặt
+# Setup
 
 > npm i 
 
-và 
-
-> npm audit fix
-
-Cài đặt Components 
+Install Components 
 
 > bower update 
 
-# Chạy dự án 
+# Run dev
 
 > npm start
 
-# Chạy Production 
+# Production 
 
-> gulp build --production
+> npm run pro
 
-# Cấu hình
+# Config
 
-- Xem file `config.json`
-- Xem các files trong thư mục `tasks`
-
-# Tạo Favicon
-
-https://www.favicon-generator.org/
+- File `config.json`
+- Files in folder `tasks`
