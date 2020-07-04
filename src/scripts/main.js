@@ -2,7 +2,7 @@ $(document).ready(function () {
 	//////////////////////////////
 	// GET IMAGE SVG Code
 	//////////////////////////////
-	$('.svg').each(function() {
+	$('img.svg').each(function() {
 		var m = $(this).attr('src');
 		var n = $(this);
 		$.ajax({
@@ -11,7 +11,7 @@ $(document).ready(function () {
 			url: m,
 			dataType: "text",
 			success: function(xml){
-				n.after('<div class="s">'+xml+'</div>')
+				n.after('<div class="s svg">'+xml+'</div>')
 				n.remove()
 			}
 		});
@@ -43,6 +43,7 @@ $(document).ready(function () {
 		items: 1,
 		nav: false,
 		dots: false,
+		loop: false,
 		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
 		responsive: {
 			480: {
@@ -52,7 +53,7 @@ $(document).ready(function () {
 				items: 4,
 			},
 			992: {
-				items: 5,
+				items: 6,
 			}
 		}
 	});

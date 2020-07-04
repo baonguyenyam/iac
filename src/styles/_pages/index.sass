@@ -57,6 +57,11 @@
 							width: 2rem
 							max-width: 2rem
 							filter: invert(1)
+						svg
+							width: 2rem
+							max-width: 2rem
+							* 
+								fill: white
 					figcaption
 						flex-basis: 0
 						flex-grow: 1
@@ -84,31 +89,12 @@
 							span 
 								+fz(1.5rem)
 								+lh(1.5rem)
-								+fw(900)
+								+fw(700)
 
 	&.in-pending
 		.tasks
 			background: darken($bg,10% )
 			border-top: 0.15rem solid #fff
-			.col-sp
-				flex: 0 0 7rem
-				width: 7rem
-				max-width: 7rem
-				background: darken($bg,70% )
-				color: #fff
-			.col-schedule
-				flex: 0 0 auto
-				width: auto
-				max-width: 100%
-				background: darken($bg,0% )
-				color: darken($bg,70% )
-			&:nth-child(even)
-				background: lighten($sen, 5%)
-				.col-sp
-					background: $main
-				.col-schedule
-					background: lighten($sen, 20%)
-					color: $main
 			article
 				width: 100%
 				display: block
@@ -122,22 +108,105 @@
 					+lh(2.3rem)
 					+fw(600)
 					+mar(0)
+			.col-sp
+				flex: 0 0 7rem
+				width: 7rem
+				max-width: 7rem
+				background: darken($bg,70% )
+				color: #fff
+			.col-schedule
+				flex: 0 0 auto
+				width: auto
+				max-width: 100%
+				background: darken($bg,0% )
+				color: darken($bg,70% )
+				article 
+					h3
+						+fz(.7rem)
+						+lh(.7rem)
+					.number-text
+						+fz(1.5rem)
+						+lh(1.5rem)
 			.owl-carousel
-				.svg 
-					path 
-						fill: green
-						fill-rule: evenodd
 				.item 
 					+pad(.5rem)
-					img
-						width: 2.5rem
-						max-width: 2.5rem
-						filter: contrast(175%) brightness(3%) hue-rotate(90deg)
-				.owl-nav
-					margin-bottom: 0
-					button 
-						i 
-							display: block
-							width: 2rem
-							height: 2rem
-							+lh(2rem)
+					color:  darken($bg,70% )
+					figure
+						+mar(0)
+						.icons
+							img
+								width: 3rem
+								max-width: 3rem
+								filter: invert(0)
+							svg
+								width: 3rem
+								max-width: 3rem
+								* 
+									fill: darken($bg,70% )
+						figcaption
+							padding-left: .5rem
+							white-space: nowrap
+							h3 
+								+fz(.9rem)
+								+lh(.9rem)
+								+mar(0)
+								+fw(500)
+								color: darken($bg,80% )
+								&.mediumtext
+									+fz(.75rem)
+									+lh(.9rem)
+								&.longtext
+									+fz(.6rem)
+									+lh(.9rem)
+							p 
+								+fz(1rem)
+								+lh(1rem)
+								+fw(700)
+								+mar(null null 1rem 0)
+								span 
+									+fz(1.5rem)
+									+lh(1.5rem)
+									+fw(700)
+									color: #000
+			&:nth-child(even)
+				background: lighten($sen, 5%)
+				.col-sp
+					background: $main
+				.col-schedule
+					background: lighten($sen, 20%)
+					color: $main
+				.owl-carousel
+					.item 
+						color: darken($sen, 35%)
+						figure
+							.icons
+								svg
+									* 
+										fill: $main
+							figcaption
+								h3 
+									color: darken($sen, 35%)
+								p 
+									span 
+										color: $main
+			&:hover 
+				background: lighten($wet-ashpalt, 5%)
+				.col-sp
+					background: $midnight-blue
+				.col-schedule
+					background: lighten($wet-ashpalt, 20%)
+					color: #fff
+				.owl-carousel
+					.item 
+						color: #fff
+						figure
+							.icons
+								svg
+									* 
+										fill: $border
+							figcaption
+								h3
+									color: $border
+								p 
+									span 
+										color: #fff

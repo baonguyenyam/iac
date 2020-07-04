@@ -11,8 +11,7 @@ var downloadTimer = setInterval(function () {
   document.getElementById("progressBar").value = 1800 - timeleft;
   $('.time').text(timeleft);
   timeleft -= 1;
-}, 1800); // Copyright 2014-2017 The Bootstrap Authors
-// Copyright 2014-2017 Twitter, Inc.
+}, 1800); // Copyright 2014-2017 IAC
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement('style');
@@ -32,7 +31,7 @@ $(document).ready(function () {
   //////////////////////////////
   // GET IMAGE SVG Code
   //////////////////////////////
-  $('.svg').each(function () {
+  $('img.svg').each(function () {
     var m = $(this).attr('src');
     var n = $(this);
     $.ajax({
@@ -41,7 +40,7 @@ $(document).ready(function () {
       url: m,
       dataType: "text",
       success: function success(xml) {
-        n.after('<div class="s">' + xml + '</div>');
+        n.after('<div class="s svg">' + xml + '</div>');
         n.remove();
       }
     });
@@ -76,6 +75,7 @@ $(document).ready(function () {
     items: 1,
     nav: false,
     dots: false,
+    loop: false,
     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     responsive: {
       480: {
@@ -85,7 +85,7 @@ $(document).ready(function () {
         items: 4
       },
       992: {
-        items: 5
+        items: 6
       }
     }
   });

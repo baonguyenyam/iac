@@ -4,7 +4,7 @@
 	-webkit-user-select: none
 	-moz-user-select: none
 	user-select: none
-	z-index: 999999
+	z-index: 88888
 	position: fixed
 	margin: auto
 	top: 0
@@ -13,9 +13,19 @@
 	bottom: 0
 	height: .75rem
 	width: 20rem
-	background: #fff
+	background: #dfdfdf
 	border: 1px solid #00467c
 	overflow: hidden
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #c3c3c3
+		content: ''
+		display: block
+		z-index: 99990
 	&:after
 		position: fixed
 		top: 0
@@ -25,6 +35,7 @@
 		background: #fff
 		content: ''
 		display: block
+		z-index: 1000
 	.pace-progress
 		-webkit-box-sizing: border-box
 		-moz-box-sizing: border-box
@@ -37,10 +48,9 @@
 		-o-transform: translate3d(0, 0, 0)
 		transform: translate3d(0, 0, 0)
 		max-width: 20rem
-		position: fixed
-		z-index: 88888
-		display: block
 		position: absolute
+		z-index: 99999
+		display: block
 		top: 0
 		right: 100%
 		height: 100%

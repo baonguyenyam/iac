@@ -1,5 +1,4 @@
-// Copyright 2014-2017 The Bootstrap Authors
-// Copyright 2014-2017 Twitter, Inc.
+// Copyright 2014-2017 IAC
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     var msViewportStyle = document.createElement('style')
     msViewportStyle.appendChild(
