@@ -41,11 +41,49 @@ $(document).ready(function () {
 	//////////////////////////////
 	// Slider
 	//////////////////////////////
-	$('.in-pending .owl-carousel').owlCarousel({
+	$('.in-pending .owl-carousel:not(.owl-admin)').owlCarousel({
+		items: 1,
+		nav: true,
+		loop:false,
+		dots: false,
+		lazyLoad: true,
+		rewind: false,
+		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+		responsive: {
+			768: {
+				items: 2,
+				nav: false,
+				dots: false,
+			},
+			992: {
+				items: 3,
+				nav: false,
+				dots: false,
+			},
+			1024: {
+				items: 4,
+				nav: false,
+				dots: false,
+			},
+			1200: {
+				items: 5,
+				nav: false,
+				dots: false,
+			},
+			1600: {
+				items: 6,
+				nav: false,
+				dots: false,
+			}
+		}
+	});
+	$('.in-pending .owl-carousel.owl-admin').owlCarousel({
 		items: 1,
 		nav: false,
-		dots: false,
-		loop: false,
+		loop:false,
+		dots: true,
+		lazyLoad: true,
+		rewind: false,
 		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
 		responsive: {
 			768: {
@@ -59,9 +97,13 @@ $(document).ready(function () {
 			},
 			1200: {
 				items: 5,
+				nav: true,
+				dots: false,
 			},
 			1600: {
 				items: 6,
+				nav: true,
+				dots: false,
 			}
 		}
 	});

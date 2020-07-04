@@ -2,16 +2,20 @@
 
 // None
 console.log('IAC Group Ready!');
-var timeleft = 1800;
-var downloadTimer = setInterval(function () {
-  if (timeleft <= 0) {
-    clearInterval(downloadTimer);
-  }
 
-  document.getElementById("progressBar").value = 1800 - timeleft;
-  $('.time').text(timeleft);
-  timeleft -= 1;
-}, 1800); // Copyright 2014-2017 IAC
+if (document.getElementById("progressBar") && document.getElementById("progressBar").length > 0) {
+  var timeleft = 1800;
+  var downloadTimer = setInterval(function () {
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+    }
+
+    document.getElementById("progressBar").value = 1800 - timeleft;
+    $('.time').text(timeleft);
+    timeleft -= 1;
+  }, 1800);
+} // Copyright 2014-2017 IAC
+
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement('style');
@@ -73,11 +77,49 @@ $(document).ready(function () {
   // Slider
   //////////////////////////////
 
-  $('.in-pending .owl-carousel').owlCarousel({
+  $('.in-pending .owl-carousel:not(.owl-admin)').owlCarousel({
+    items: 1,
+    nav: true,
+    loop: false,
+    dots: false,
+    lazyLoad: true,
+    rewind: false,
+    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+    responsive: {
+      768: {
+        items: 2,
+        nav: false,
+        dots: false
+      },
+      992: {
+        items: 3,
+        nav: false,
+        dots: false
+      },
+      1024: {
+        items: 4,
+        nav: false,
+        dots: false
+      },
+      1200: {
+        items: 5,
+        nav: false,
+        dots: false
+      },
+      1600: {
+        items: 6,
+        nav: false,
+        dots: false
+      }
+    }
+  });
+  $('.in-pending .owl-carousel.owl-admin').owlCarousel({
     items: 1,
     nav: false,
-    dots: false,
     loop: false,
+    dots: true,
+    lazyLoad: true,
+    rewind: false,
     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     responsive: {
       768: {
@@ -90,10 +132,14 @@ $(document).ready(function () {
         items: 4
       },
       1200: {
-        items: 5
+        items: 5,
+        nav: true,
+        dots: false
       },
       1600: {
-        items: 6
+        items: 6,
+        nav: true,
+        dots: false
       }
     }
   });
