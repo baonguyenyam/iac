@@ -3,7 +3,7 @@
 // None
 console.log('IAC Group Ready!');
 
-if (document.getElementById("progressBar") && document.getElementById("progressBar").length > 0) {
+if ($("#progressBar") && $("#progressBar").length > 0) {
   var timeleft = 1800;
   var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
