@@ -7339,7 +7339,8 @@ header {
   header #dropdownFS {
     line-height: 1;
     padding-right: 1rem;
-    position: relative; }
+    position: relative;
+    font-size: 1rem; }
     header #dropdownFS strong {
       color: #300; }
     header #dropdownFS:after {
@@ -7398,6 +7399,17 @@ footer {
         line-height: 2.5rem; }
         .in-process.in-processing article .secondary-text .number-text .percent {
           font-size: 1.8rem; }
+      .in-process.in-processing article .status {
+        background: white;
+        color: green;
+        padding: .25rem 1rem;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-top: .25rem;
+        border-radius: .25rem; }
+        .in-process.in-processing article .status.pause {
+          color: red; }
     .in-process.in-processing .group-items {
       display: flex;
       flex-wrap: wrap; }
