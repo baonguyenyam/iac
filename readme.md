@@ -1,21 +1,3 @@
-```
-    $$$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\ $$\     $$\ $$$$$$$$\ $$\   $$\
-    $$  __$$\ $$  __$$\ $$  __$$\ $$$\  $$ |$$  __$$\ $$ |  $$ |\$$\   $$  |$$  _____|$$$\  $$ |
-    $$ |  $$ |$$ /  $$ |$$ /  $$ |$$$$\ $$ |$$ /  \__|$$ |  $$ | \$$\ $$  / $$ |      $$$$\ $$ |
-    $$$$$$$\ |$$$$$$$$ |$$ |  $$ |$$ $$\$$ |$$ |$$$$\ $$ |  $$ |  \$$$$  /  $$$$$\    $$ $$\$$ |
-    $$  __$$\ $$  __$$ |$$ |  $$ |$$ \$$$$ |$$ |\_$$ |$$ |  $$ |   \$$  /   $$  __|   $$ \$$$$ |
-    $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |  $$ |$$ |  $$ |    $$ |    $$ |      $$ |\$$$ |
-    $$$$$$$  |$$ |  $$ | $$$$$$  |$$ | \$$ |\$$$$$$  |\$$$$$$  |    $$ |    $$$$$$$$\ $$ | \$$ |
-    \_______/ \__|  \__| \______/ \__|  \__| \______/  \______/     \__|    \________|\__|  \__|
-
-    Coding by: Bao Nguyen
-    Tel: 0.96.96.89.89.3
-    Email: baonguyenyam@gmail.com
-    URL: fb.com/pham.nguyen.bao.nguyen,
-    baonguyenyam.github.io/cv
-    GitHub: https://baonguyenyam.github.io/cv
-```
-
 # Features
 
 - Build on Bootstrap Frameworks
@@ -49,3 +31,12 @@ Install Components
 
 - File `config.json`
 - Files in folder `tasks`
+
+```
+    Coding by: Bao Nguyen
+    Tel: 0.96.96.89.89.3
+    Email: baonguyenyam@gmail.com
+    URL: fb.com/pham.nguyen.bao.nguyen,
+    baonguyenyam.github.io/cv
+    GitHub: https://baonguyenyam.github.io/cv
+```
