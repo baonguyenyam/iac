@@ -36,7 +36,7 @@ Install Components
 
 ```
     Coding by: Bao Nguyen
-    Tel: 0.96.96.89.89.3
+    Tel: 682.203.1334
     Email: baonguyenyam@gmail.com
     URL: fb.com/pham.nguyen.bao.nguyen,
     baonguyenyam.github.io/cv
