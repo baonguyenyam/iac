@@ -7195,7 +7195,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #dfdfdf;
     content: '';
     display: block;
     z-index: 1000; }
@@ -7229,11 +7229,11 @@ html, body {
 
 body {
   font-size: 16px;
-  padding-top: 3.2rem; }
+  padding-top: 3.1rem; }
   @media (min-width: 992px) {
     body {
       font-size: 18px;
-      padding-top: 4.2rem; } }
+      padding-top: 4.1rem; } }
   @media (min-width: 1200px) {
     body {
       font-size: 22px;
@@ -7506,14 +7506,52 @@ footer {
       .in-process.in-processing .group-items .item {
         flex: 0 0 25%;
         width: 25%;
-        max-width: 25%; } }
+        max-width: 25%; }
+        .in-process.in-processing .group-items .item figure .icons img {
+          width: 3.5rem;
+          max-width: 3.5rem; }
+        .in-process.in-processing .group-items .item figure .icons svg {
+          width: 3.5rem;
+          max-width: 3.5rem; }
+        .in-process.in-processing .group-items .item figure figcaption h3 {
+          font-size: 1rem;
+          line-height: 1.2rem; }
+          .in-process.in-processing .group-items .item figure figcaption h3.mediumtext {
+            font-size: 0.9rem;
+            line-height: 1.2rem; }
+          .in-process.in-processing .group-items .item figure figcaption h3.longtext {
+            font-size: 0.8rem;
+            line-height: 1.2rem; }
+        .in-process.in-processing .group-items .item figure figcaption p {
+          font-size: 1.4rem;
+          line-height: 1.4rem; }
+          .in-process.in-processing .group-items .item figure figcaption p span {
+            font-size: 1.8rem;
+            line-height: 1.8rem; }
+      .in-process.in-processing article h4 {
+        font-size: 1rem; }
+      .in-process.in-processing article h3 {
+        font-size: 1.5rem; }
+      .in-process.in-processing article .number-text {
+        font-size: 4rem;
+        line-height: 4rem; }
+      .in-process.in-processing article .desc-text {
+        font-size: 2rem;
+        line-height: 2rem; }
+      .in-process.in-processing article .secondary-text h3 {
+        font-size: 1rem; }
+      .in-process.in-processing article .secondary-text .number-text {
+        font-size: 3rem;
+        line-height: 3rem; }
+        .in-process.in-processing article .secondary-text .number-text .percent {
+          font-size: 2rem; } }
     @media (min-width: 1600px) {
       .in-process.in-processing .group-items .item figure .icons img {
-        width: 4.5rem;
-        max-width: 4.5rem; }
+        width: 4rem;
+        max-width: 4rem; }
       .in-process.in-processing .group-items .item figure .icons svg {
-        width: 4.5rem;
-        max-width: 4.5rem; }
+        width: 4rem;
+        max-width: 4rem; }
       .in-process.in-processing .group-items .item figure figcaption h3 {
         font-size: 1.7rem;
         line-height: 2.2rem; }
@@ -7524,11 +7562,11 @@ footer {
           font-size: 1.2rem;
           line-height: 2.2rem; }
       .in-process.in-processing .group-items .item figure figcaption p {
-        font-size: 2rem;
-        line-height: 2.4rem; }
+        font-size: 1.8rem;
+        line-height: 1.8rem; }
         .in-process.in-processing .group-items .item figure figcaption p span {
-          font-size: 3rem;
-          line-height: 2.4rem; }
+          font-size: 2.6rem;
+          line-height: 2.6rem; }
       .in-process.in-processing article h4 {
         font-size: 1.5rem; }
       .in-process.in-processing article h3 {
@@ -7537,8 +7575,8 @@ footer {
         font-size: 6rem;
         line-height: 6rem; }
       .in-process.in-processing article .desc-text {
-        font-size: 3rem;
-        line-height: 3rem; }
+        font-size: 2.5rem;
+        line-height: 2.5rem; }
       .in-process.in-processing article .secondary-text h3 {
         font-size: 1.5rem; }
       .in-process.in-processing article .secondary-text .number-text {
@@ -7563,14 +7601,14 @@ footer {
         font-weight: 600;
         margin: 0; }
     .in-process.in-pending .tasks .col-sp {
-      flex: 0 0 7rem;
-      width: 7rem;
-      max-width: 7rem;
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
       background: #2d3133;
       color: #fff; }
     .in-process.in-pending .tasks .col-schedule {
-      flex: 0 0 auto;
-      width: auto;
+      flex: 0 0 100%;
+      width: 100%;
       max-width: 100%;
       background: #e1e3e4;
       color: #2d3133; }
@@ -7578,8 +7616,8 @@ footer {
         font-size: 0.7rem;
         line-height: 0.7rem; }
       .in-process.in-pending .tasks .col-schedule article .number-text {
-        font-size: 1.5rem;
-        line-height: 1.5rem; }
+        font-size: 2rem;
+        line-height: 2rem; }
     .in-process.in-pending .tasks .owl-carousel .item {
       padding: 0.5rem;
       color: #2d3133; }
@@ -7650,5 +7688,120 @@ footer {
           color: #bfc1c2; }
         .in-process.in-pending .tasks:hover .owl-carousel .item figure figcaption p span {
           color: #fff; }
+  @media (max-width: 767.98px) {
+    .in-process.in-pending .tasks .col-schedule .admin-icon {
+      position: absolute;
+      right: 1rem;
+      top: 0; } }
+  @media (max-width: 991.98px) {
+    .in-process.in-pending .tasks {
+      border: 0.15rem solid #2d3133;
+      margin: 0.5rem; }
+      .in-process.in-pending .tasks:nth-child(even) {
+        border: 0.15rem solid #00467c; }
+      .in-process.in-pending .tasks .owl-carousel .item figure {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center; }
+        .in-process.in-pending .tasks .owl-carousel .item figure .icons {
+          flex: 0 0 4rem;
+          width: 4rem;
+          max-width: 4rem; }
+          .in-process.in-pending .tasks .owl-carousel .item figure .icons svg {
+            width: 4rem;
+            max-width: 4rem; }
+        .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3 {
+          font-size: 1.2rem;
+          line-height: 1.2rem; }
+          .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3.mediumtext {
+            font-size: 1rem;
+            line-height: 1rem; }
+          .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3.longtext {
+            font-size: 0.9rem;
+            line-height: 0.9rem; }
+        .in-process.in-pending .tasks .owl-carousel .item figure figcaption p {
+          font-size: 1rem;
+          line-height: 1rem;
+          margin-bottom: 0;
+          margin-left: 0; }
+          .in-process.in-pending .tasks .owl-carousel .item figure figcaption p span {
+            font-size: 1.5rem;
+            line-height: 1.5rem; } }
+  @media (min-width: 768px) {
+    .in-process.in-pending .tasks article h3 {
+      font-size: 0.9rem; }
+    .in-process.in-pending .tasks article .number-text {
+      font-size: 2.3rem;
+      line-height: 2.3rem; }
+    .in-process.in-pending .tasks .col-sp {
+      flex: 0 0 7rem;
+      width: 7rem;
+      max-width: 7rem; }
+    .in-process.in-pending .tasks .col-schedule {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%; }
+      .in-process.in-pending .tasks .col-schedule article h3 {
+        font-size: 0.7rem;
+        line-height: 0.7rem; }
+      .in-process.in-pending .tasks .col-schedule article .number-text {
+        font-size: 1.5rem;
+        line-height: 1.5rem; } }
+  @media (min-width: 992px) {
+    .in-process.in-pending .tasks .col-schedule .admin-icon {
+      visibility: hidden; }
+    .in-process.in-pending .tasks:hover .col-schedule .admin-icon {
+      visibility: visible; }
+    .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3 {
+      font-size: 1.2rem;
+      line-height: 1.2rem; }
+      .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3.mediumtext {
+        font-size: 1rem;
+        line-height: 1rem; }
+      .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3.longtext {
+        font-size: 0.9rem;
+        line-height: 0.9rem; }
+    .in-process.in-pending .tasks .owl-carousel .item figure figcaption p {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 0; }
+      .in-process.in-pending .tasks .owl-carousel .item figure figcaption p span {
+        font-size: 1.5rem;
+        line-height: 1.5rem; } }
+  @media (min-width: 1600px) {
+    .in-process.in-pending .tasks article h3 {
+      font-size: 1rem; }
+    .in-process.in-pending .tasks article .number-text {
+      font-size: 3rem;
+      line-height: 3rem; }
+    .in-process.in-pending .tasks .col-sp {
+      flex: 0 0 9rem;
+      width: 9rem;
+      max-width: 9rem; }
+    .in-process.in-pending .tasks .col-schedule article h3 {
+      font-size: 0.9rem;
+      line-height: 0.9rem; }
+    .in-process.in-pending .tasks .col-schedule article .number-text {
+      font-size: 2rem;
+      line-height: 2rem; }
+    .in-process.in-pending .tasks .owl-carousel .item figure .icons svg {
+      width: 4rem;
+      max-width: 4rem; }
+    .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3 {
+      font-size: 1.2rem;
+      line-height: 1.2rem; }
+      .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3.mediumtext {
+        font-size: 1rem;
+        line-height: 1rem; }
+      .in-process.in-pending .tasks .owl-carousel .item figure figcaption h3.longtext {
+        font-size: 0.9rem;
+        line-height: 0.9rem; }
+    .in-process.in-pending .tasks .owl-carousel .item figure figcaption p {
+      font-size: 1.5rem;
+      line-height: 1.5rem; }
+      .in-process.in-pending .tasks .owl-carousel .item figure figcaption p span {
+        font-size: 2rem;
+        line-height: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */

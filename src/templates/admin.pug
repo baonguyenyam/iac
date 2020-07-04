@@ -1,11 +1,11 @@
-extends _layout/layout
+extends _layout/layout_admin
 
 //- Default value
 block variables
-	- var title = 'Home'
+	- var title = 'Admin'
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
-	- var href = "/index.html"
+	- var href = "/admin.html"
 
 //- body
 block body
@@ -21,6 +21,11 @@ block body
 							.col-md 
 								h4.info-text Name
 								.desc-text Denali SWB Premium
+							.col-auto.admin-icon
+								a.btn.btn-warning.btn-sm.mt-2.mt-md-0(href="javascript:void(0);" onclick="alert('Action link');")
+									| Edit content
+									| 
+									i.fa.fa-cog
 					article.px-2.pt-3.pb-2
 						.group-items
 							.item
@@ -105,9 +110,14 @@ block body
 					.col-schedule.d-flex.align-items-center
 						article.p-3
 							.row
-								.col-12
+								.col
 									h3.info-text Schedule
 									.number-text=schedule
+									.admin-icon
+										a.btn.btn-warning.btn-sm.mt-md-0(href="javascript:void(0);" onclick="alert('Action link');")
+											| Edit content
+											| 
+											i.fa.fa-cog
 					.col-12.col-md
 						article
 							.owl-carousel.owl-theme

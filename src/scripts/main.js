@@ -24,7 +24,7 @@ $(document).ready(function () {
 		var ind_text_begin = str.substring(0, str.length - 4)
 		var ind_text_end = str.substring(str.length - 4)
 		if(ind_text_begin.length > 8) {
-			if($( window ).width() >= 768) {
+			if($( window ).width() >= 991) {
 				ind_text_begin = '...' + ind_text_begin.substring(ind_text_begin.length - 5)
 			}
 		}
@@ -54,7 +54,10 @@ $(document).ready(function () {
 			992: {
 				items: 3,
 			},
-			1440: {
+			1024: {
+				items: 4,
+			},
+			1200: {
 				items: 5,
 			},
 			1600: {

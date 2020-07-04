@@ -151,36 +151,61 @@
 					flex: 0 0 25%
 					width: 25%
 					max-width: 25%
-			// article
-			// 	h4 
-			// 		+fz(.8rem)
-			// 	h3 
-			// 		+fz(1rem)
-			// 	.number-text
-			// 		+fz(3.5rem)
-			// 		+lh(3.5rem)
-			// 	.desc-text
-			// 		+fz(1.5rem)
-			// 		+lh(1.5rem)
-			// 	.secondary-text
-			// 		h3 
-			// 			+fz(.85rem)
-			// 		.number-text
-			// 			+fz(2.5rem)
-			// 			+lh(2.5rem)
-			// 			.percent
-			// 				+fz(1.8rem)
+					figure
+						.icons
+							img
+								width: 3.5rem
+								max-width: 3.5rem
+							svg
+								width: 3.5rem
+								max-width: 3.5rem
+						figcaption
+							// check cái này 
+							h3 
+								+fz(1rem)
+								+lh(1.2rem)
+								&.mediumtext
+									+fz(.9rem)
+									+lh(1.2rem)
+								&.longtext
+									+fz(.8rem)
+									+lh(1.2rem)
+							p 
+								+fz(1.4rem)
+								+lh(1.4rem)
+								span 
+									+fz(1.8rem)
+									+lh(1.8rem)
+			article
+				h4 
+					+fz(1rem)
+				h3 
+					+fz(1.5rem)
+				.number-text
+					+fz(4rem)
+					+lh(4rem)
+				.desc-text
+					+fz(2rem)
+					+lh(2rem)
+				.secondary-text
+					h3 
+						+fz(1rem)
+					.number-text
+						+fz(3rem)
+						+lh(3rem)
+						.percent
+							+fz(2rem)
 		@media (min-width: 1600px)
 			.group-items
 				.item
 					figure
 						.icons
 							img
-								width: 4.5rem
-								max-width: 4.5rem
+								width: 4rem
+								max-width: 4rem
 							svg
-								width: 4.5rem
-								max-width: 4.5rem
+								width: 4rem
+								max-width: 4rem
 						figcaption
 							h3 
 								+fz(1.7rem)
@@ -192,11 +217,11 @@
 									+fz(1.2rem)
 									+lh(2.2rem)
 							p 
-								+fz(2rem)
-								+lh(2.4rem)
+								+fz(1.8rem)
+								+lh(1.8rem)
 								span 
-									+fz(3rem)
-									+lh(2.4rem)
+									+fz(2.6rem)
+									+lh(2.6rem)
 			article
 				h4 
 					+fz(1.5rem)
@@ -206,8 +231,8 @@
 					+fz(6rem)
 					+lh(6rem)
 				.desc-text
-					+fz(3rem)
-					+lh(3rem)
+					+fz(2.5rem)
+					+lh(2.5rem)
 				.secondary-text
 					h3 
 						+fz(1.5rem)
@@ -235,14 +260,14 @@
 					+fw(600)
 					+mar(0)
 			.col-sp
-				flex: 0 0 7rem
-				width: 7rem
-				max-width: 7rem
+				flex: 0 0 100%
+				width: 100%
+				max-width: 100%
 				background: darken($bg,70% )
 				color: #fff
 			.col-schedule
-				flex: 0 0 auto
-				width: auto
+				flex: 0 0 100%
+				width: 100%
 				max-width: 100%
 				background: darken($bg,0% )
 				color: darken($bg,70% )
@@ -251,8 +276,8 @@
 						+fz(.7rem)
 						+lh(.7rem)
 					.number-text
-						+fz(1.5rem)
-						+lh(1.5rem)
+						+fz(2rem)
+						+lh(2rem)
 			.owl-carousel
 				.item 
 					+pad(.5rem)
@@ -336,3 +361,141 @@
 								p 
 									span 
 										color: #fff
+		+media-breakpoint-down(sm)
+			.tasks
+				.col-schedule
+					.admin-icon
+						position: absolute
+						right: 1rem
+						top: 0
+		+media-breakpoint-down(md)
+			.tasks
+				border: 0.15rem solid darken($bg,70% )
+				margin: 0.5rem
+				&:nth-child(even)
+					border: 0.15rem solid $main
+				.owl-carousel
+					.item 
+						figure
+							display: flex
+							flex-wrap: nowrap
+							align-items: center
+							.icons
+								flex: 0 0 4rem
+								width: 4rem
+								max-width: 4rem
+								svg
+									width: 4rem
+									max-width: 4rem
+							figcaption
+								h3 
+									+fz(1.2rem)
+									+lh(1.2rem)
+									&.mediumtext
+										+fz(1rem)
+										+lh(1rem)
+									&.longtext
+										+fz(.9rem)
+										+lh(.9rem)
+								p 
+									+fz(1rem)
+									+lh(1rem)
+									+mar(null null 0 0)
+									span 
+										+fz(1.5rem)
+										+lh(1.5rem)
+		+media-breakpoint-up(md)
+			.tasks
+				article
+					h3 
+						+fz(.9rem)
+					.number-text
+						+fz(2.3rem)
+						+lh(2.3rem)
+				.col-sp
+					flex: 0 0 7rem
+					width: 7rem
+					max-width: 7rem
+				.col-schedule
+					flex: 0 0 auto
+					width: auto
+					max-width: 100%
+					article 
+						h3
+							+fz(.7rem)
+							+lh(.7rem)
+						.number-text
+							+fz(1.5rem)
+							+lh(1.5rem)
+		+media-breakpoint-up(lg)
+			.tasks
+				.col-schedule
+					.admin-icon
+						visibility: hidden
+				&:hover
+					.col-schedule
+						.admin-icon
+							visibility: visible
+				.owl-carousel
+					.item 
+						figure
+							figcaption
+								h3 
+									+fz(1.2rem)
+									+lh(1.2rem)
+									&.mediumtext
+										+fz(1rem)
+										+lh(1rem)
+									&.longtext
+										+fz(.9rem)
+										+lh(.9rem)
+								p 
+									+fz(1rem)
+									+lh(1rem)
+									+mar(null null 1rem 0)
+									span 
+										+fz(1.5rem)
+										+lh(1.5rem)
+		@media (min-width: 1600px)
+			.tasks
+				article
+					h3 
+						+fz(1rem)
+					.number-text
+						+fz(3rem)
+						+lh(3rem)
+				.col-sp
+					flex: 0 0 9rem
+					width: 9rem
+					max-width: 9rem
+				.col-schedule
+					article 
+						h3
+							+fz(.9rem)
+							+lh(.9rem)
+						.number-text
+							+fz(2rem)
+							+lh(2rem)
+				.owl-carousel
+					.item 
+						figure
+							.icons
+								svg
+									width: 4rem
+									max-width: 4rem
+							figcaption
+								h3 
+									+fz(1.2rem)
+									+lh(1.2rem)
+									&.mediumtext
+										+fz(1rem)
+										+lh(1rem)
+									&.longtext
+										+fz(.9rem)
+										+lh(.9rem)
+								p 
+									+fz(1.5rem)
+									+lh(1.5rem)
+									span 
+										+fz(2rem)
+										+lh(2rem)
