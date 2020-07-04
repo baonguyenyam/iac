@@ -54,7 +54,9 @@ $(document).ready(function () {
     var ind_text_end = str.substring(str.length - 4);
 
     if (ind_text_begin.length > 8) {
-      ind_text_begin = '...' + ind_text_begin.substring(ind_text_begin.length - 5);
+      if ($(window).width() >= 768) {
+        ind_text_begin = '...' + ind_text_begin.substring(ind_text_begin.length - 5);
+      }
     }
 
     $(this).html(ind_text_begin + '<span>' + ind_text_end + '</span>');
@@ -78,13 +80,16 @@ $(document).ready(function () {
     loop: false,
     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     responsive: {
-      480: {
+      768: {
         items: 2
       },
-      768: {
-        items: 4
-      },
       992: {
+        items: 3
+      },
+      1440: {
+        items: 5
+      },
+      1600: {
         items: 6
       }
     }

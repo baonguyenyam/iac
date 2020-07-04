@@ -7224,12 +7224,24 @@ a.text-dark:hover, a.text-dark:focus {
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  font-size: 28px;
   height: 100%;
   width: 100%; }
 
 body {
-  padding-top: 3.4rem; }
+  font-size: 16px;
+  padding-top: 3.2rem; }
+  @media (min-width: 992px) {
+    body {
+      font-size: 18px;
+      padding-top: 4.2rem; } }
+  @media (min-width: 1200px) {
+    body {
+      font-size: 22px;
+      padding-top: 4.2rem; } }
+  @media (min-width: 1600px) {
+    body {
+      font-size: 28px;
+      padding-top: 5rem; } }
 
 .container-fullwidth {
   width: 100%; }
@@ -7291,26 +7303,40 @@ header {
     padding-right: 0;
     padding-bottom: 0.25rem;
     padding-left: 0; }
+    header .navbar .countdown {
+      line-height: 1; }
     header .navbar .navbar-nav li {
       position: relative; }
-    header .navbar .navbar-nav li.name-line {
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      display: flex; }
+    header .navbar .navbar-nav li.name-line .innerbox {
+      background: #9abad9;
+      color: #00467c;
+      border-radius: 0.175rem;
+      padding: 0.085rem 0.5rem;
+      font-weight: 900;
+      text-transform: uppercase; }
+    @media (min-width: 992px) {
+      header .navbar .navbar-nav li.name-line {
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        display: flex; }
+        header .navbar .navbar-nav li.name-line .innerbox {
+          font-size: 1.5rem; } }
+    @media (min-width: 1200px) {
       header .navbar .navbar-nav li.name-line .innerbox {
-        background: #9abad9;
-        color: #00467c;
-        border-radius: 0.175rem;
-        padding: 0.085rem 0.5rem;
-        font-weight: 900;
-        font-size: 1.5rem;
-        text-transform: uppercase; }
+        font-size: 1.8rem; } }
+    @media (min-width: 1600px) {
+      header .navbar .navbar-nav li.name-line .innerbox {
+        font-size: 2rem; } }
     header .navbar .navbar-nav .dropdown-menu .dropdown-item:hover, header .navbar .navbar-nav .dropdown-menu .dropdown-item:active {
       background: #00467c;
       color: #fff; }
   header .navbar-brand img {
-    max-height: 2rem; }
+    max-height: 2rem;
+    max-width: 7rem; }
+    @media (min-width: 992px) {
+      header .navbar-brand img {
+        max-width: 15rem; } }
   header #dropdownFS {
     line-height: 1;
     padding-right: 1rem;
@@ -7358,13 +7384,11 @@ footer {
         margin: 0; }
       .in-process.in-processing article .number-text {
         font-size: 3.5rem;
-        white-space: nowrap;
         line-height: 3.5rem;
         font-weight: 900;
         margin: 0; }
       .in-process.in-processing article .desc-text {
         font-size: 1.5rem;
-        white-space: nowrap;
         line-height: 1.5rem;
         font-weight: 900;
         margin: 0; }
@@ -7379,9 +7403,9 @@ footer {
       display: flex;
       flex-wrap: wrap; }
       .in-process.in-processing .group-items .item {
-        flex: 0 0 25%;
-        width: 25%;
-        max-width: 25%; }
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%; }
         .in-process.in-processing .group-items .item figure {
           display: flex;
           flex-wrap: wrap;
@@ -7391,12 +7415,12 @@ footer {
             width: auto;
             max-width: 100%; }
             .in-process.in-processing .group-items .item figure .icons img {
-              width: 2rem;
-              max-width: 2rem;
+              width: 2.5rem;
+              max-width: 2.5rem;
               filter: invert(1); }
             .in-process.in-processing .group-items .item figure .icons svg {
-              width: 2rem;
-              max-width: 2rem; }
+              width: 2.5rem;
+              max-width: 2.5rem; }
               .in-process.in-processing .group-items .item figure .icons svg * {
                 fill: white; }
           .in-process.in-processing .group-items .item figure figcaption {
@@ -7428,6 +7452,100 @@ footer {
                 font-size: 1.5rem;
                 line-height: 1.5rem;
                 font-weight: 700; }
+    @media (min-width: 768px) {
+      .in-process.in-processing .group-items .item {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%; } }
+    @media (min-width: 992px) {
+      .in-process.in-processing .group-items .item {
+        flex: 0 0 33.333333%;
+        width: 33.333333%;
+        max-width: 33.333333%; }
+        .in-process.in-processing .group-items .item figure .icons img {
+          width: 3rem;
+          max-width: 3rem; }
+        .in-process.in-processing .group-items .item figure .icons svg {
+          width: 3rem;
+          max-width: 3rem; }
+        .in-process.in-processing .group-items .item figure figcaption h3 {
+          font-size: 0.9rem;
+          line-height: 1rem; }
+          .in-process.in-processing .group-items .item figure figcaption h3.mediumtext {
+            font-size: 0.8rem;
+            line-height: 1rem; }
+          .in-process.in-processing .group-items .item figure figcaption h3.longtext {
+            font-size: 0.75rem;
+            line-height: 1rem; }
+        .in-process.in-processing .group-items .item figure figcaption p {
+          font-size: 1.2rem;
+          line-height: 1.2rem; }
+          .in-process.in-processing .group-items .item figure figcaption p span {
+            font-size: 1.8rem;
+            line-height: 1.8rem; }
+      .in-process.in-processing article h4 {
+        font-size: 0.8rem; }
+      .in-process.in-processing article h3 {
+        font-size: 1rem; }
+      .in-process.in-processing article .number-text {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        white-space: nowrap; }
+      .in-process.in-processing article .desc-text {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        white-space: nowrap; }
+      .in-process.in-processing article .secondary-text h3 {
+        font-size: 0.85rem; }
+      .in-process.in-processing article .secondary-text .number-text {
+        font-size: 2.5rem;
+        line-height: 2.5rem; }
+        .in-process.in-processing article .secondary-text .number-text .percent {
+          font-size: 1.8rem; } }
+    @media (min-width: 1200px) {
+      .in-process.in-processing .group-items .item {
+        flex: 0 0 25%;
+        width: 25%;
+        max-width: 25%; } }
+    @media (min-width: 1600px) {
+      .in-process.in-processing .group-items .item figure .icons img {
+        width: 4.5rem;
+        max-width: 4.5rem; }
+      .in-process.in-processing .group-items .item figure .icons svg {
+        width: 4.5rem;
+        max-width: 4.5rem; }
+      .in-process.in-processing .group-items .item figure figcaption h3 {
+        font-size: 1.7rem;
+        line-height: 2.2rem; }
+        .in-process.in-processing .group-items .item figure figcaption h3.mediumtext {
+          font-size: 1.4rem;
+          line-height: 2.2rem; }
+        .in-process.in-processing .group-items .item figure figcaption h3.longtext {
+          font-size: 1.2rem;
+          line-height: 2.2rem; }
+      .in-process.in-processing .group-items .item figure figcaption p {
+        font-size: 2rem;
+        line-height: 2.4rem; }
+        .in-process.in-processing .group-items .item figure figcaption p span {
+          font-size: 3rem;
+          line-height: 2.4rem; }
+      .in-process.in-processing article h4 {
+        font-size: 1.5rem; }
+      .in-process.in-processing article h3 {
+        font-size: 1.8rem; }
+      .in-process.in-processing article .number-text {
+        font-size: 6rem;
+        line-height: 6rem; }
+      .in-process.in-processing article .desc-text {
+        font-size: 3rem;
+        line-height: 3rem; }
+      .in-process.in-processing article .secondary-text h3 {
+        font-size: 1.5rem; }
+      .in-process.in-processing article .secondary-text .number-text {
+        font-size: 4rem;
+        line-height: 4rem; }
+        .in-process.in-processing article .secondary-text .number-text .percent {
+          font-size: 1.8rem; } }
   .in-process.in-pending .tasks {
     background: #c6cacc;
     border-top: 0.15rem solid #fff; }

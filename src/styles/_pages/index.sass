@@ -20,13 +20,11 @@
 				+mar(0)
 			.number-text
 				+fz(3.5rem)
-				white-space: nowrap
 				+lh(3.5rem)
 				+fw(900)
 				+mar(0)
 			.desc-text
 				+fz(1.5rem)
-				white-space: nowrap
 				+lh(1.5rem)
 				+fw(900)
 				+mar(0)
@@ -42,9 +40,9 @@
 			display: flex
 			flex-wrap: wrap
 			.item
-				flex: 0 0 25%
-				width: 25%
-				max-width: 25%
+				flex: 0 0 100%
+				width: 100%
+				max-width: 100%
 				figure
 					display: flex
 					flex-wrap: wrap
@@ -54,12 +52,12 @@
 						width: auto
 						max-width: 100%
 						img
-							width: 2rem
-							max-width: 2rem
+							width: 2.5rem
+							max-width: 2.5rem
 							filter: invert(1)
 						svg
-							width: 2rem
-							max-width: 2rem
+							width: 2.5rem
+							max-width: 2.5rem
 							* 
 								fill: white
 					figcaption
@@ -90,6 +88,134 @@
 								+fz(1.5rem)
 								+lh(1.5rem)
 								+fw(700)
+		+media-breakpoint-up(md)
+			.group-items
+				.item
+					flex: 0 0 50%
+					width: 50%
+					max-width: 50%
+		+media-breakpoint-up(lg)
+			.group-items
+				.item
+					flex: 0 0 33.333333%
+					width: 33.333333%
+					max-width: 33.333333%
+					figure
+						.icons
+							img
+								width: 3rem
+								max-width: 3rem
+							svg
+								width: 3rem
+								max-width: 3rem
+						figcaption
+							h3 
+								+fz(.9rem)
+								+lh(1rem)
+								&.mediumtext
+									+fz(.8rem)
+									+lh(1rem)
+								&.longtext
+									+fz(.75rem)
+									+lh(1rem)
+							p 
+								+fz(1.2rem)
+								+lh(1.2rem)
+								span 
+									+fz(1.8rem)
+									+lh(1.8rem)
+			article
+				h4 
+					+fz(.8rem)
+				h3 
+					+fz(1rem)
+				.number-text
+					+fz(3.5rem)
+					+lh(3.5rem)
+					white-space: nowrap
+				.desc-text
+					+fz(1.5rem)
+					+lh(1.5rem)
+					white-space: nowrap
+				.secondary-text
+					h3 
+						+fz(.85rem)
+					.number-text
+						+fz(2.5rem)
+						+lh(2.5rem)
+						.percent
+							+fz(1.8rem)
+		+media-breakpoint-up(xl)
+			.group-items
+				.item
+					flex: 0 0 25%
+					width: 25%
+					max-width: 25%
+			// article
+			// 	h4 
+			// 		+fz(.8rem)
+			// 	h3 
+			// 		+fz(1rem)
+			// 	.number-text
+			// 		+fz(3.5rem)
+			// 		+lh(3.5rem)
+			// 	.desc-text
+			// 		+fz(1.5rem)
+			// 		+lh(1.5rem)
+			// 	.secondary-text
+			// 		h3 
+			// 			+fz(.85rem)
+			// 		.number-text
+			// 			+fz(2.5rem)
+			// 			+lh(2.5rem)
+			// 			.percent
+			// 				+fz(1.8rem)
+		@media (min-width: 1600px)
+			.group-items
+				.item
+					figure
+						.icons
+							img
+								width: 4.5rem
+								max-width: 4.5rem
+							svg
+								width: 4.5rem
+								max-width: 4.5rem
+						figcaption
+							h3 
+								+fz(1.7rem)
+								+lh(2.2rem)
+								&.mediumtext
+									+fz(1.4rem)
+									+lh(2.2rem)
+								&.longtext
+									+fz(1.2rem)
+									+lh(2.2rem)
+							p 
+								+fz(2rem)
+								+lh(2.4rem)
+								span 
+									+fz(3rem)
+									+lh(2.4rem)
+			article
+				h4 
+					+fz(1.5rem)
+				h3 
+					+fz(1.8rem)
+				.number-text
+					+fz(6rem)
+					+lh(6rem)
+				.desc-text
+					+fz(3rem)
+					+lh(3rem)
+				.secondary-text
+					h3 
+						+fz(1.5rem)
+					.number-text
+						+fz(4rem)
+						+lh(4rem)
+						.percent
+							+fz(1.8rem)
 
 	&.in-pending
 		.tasks
