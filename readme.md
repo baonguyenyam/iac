@@ -2,6 +2,8 @@
 
 - Build on Bootstrap Frameworks
 - Using SVG Images 
+- Auto scale long text
+- Using Image language for workers
 - Mobile friendly
 - Tested on:
 - - Mobile: iPhone X (375 x 812)
