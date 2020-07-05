@@ -7406,7 +7406,6 @@ footer {
         text-align: center;
         font-weight: 900;
         text-transform: uppercase;
-        margin-top: .25rem;
         border-radius: .25rem; }
         .in-process.in-processing article .status.pause {
           color: red; }
