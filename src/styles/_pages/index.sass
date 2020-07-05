@@ -360,14 +360,13 @@
 								p 
 									span 
 										color: $main
-					&.owl-admin
-						.owl-dots
-							button 
+					.owl-dots
+						button 
+							span 
+								background: darken($sen, 10%)
+							&.active
 								span 
-									background: darken($sen, 10%)
-								&.active
-									span 
-										background: $main
+									background: $main
 			&:hover 
 				background: lighten($wet-ashpalt, 5%)
 				.col-sp
@@ -434,9 +433,6 @@
 										+lh(1.5rem)
 					.owl-nav
 						margin-top: 0
-						display: flex
-						justify-content: center
-						align-items: center
 						margin-bottom: 1rem
 						button
 							+fz(.8rem)
