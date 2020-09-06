@@ -7392,6 +7392,22 @@ footer {
         line-height: 1.5rem;
         font-weight: 900;
         margin: 0; }
+      .in-process.in-processing article .primary-text h3 {
+        font-size: 1.5rem; }
+      .in-process.in-processing article .primary-text .number-text {
+        font-size: 7rem;
+        line-height: 7rem; }
+        .in-process.in-processing article .primary-text .number-text .percent {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          filter: alpha(opacity=50);
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+          -webkit-opacity: 0.5;
+          -khtml-opacity: 0.5;
+          -moz-opacity: 0.5;
+          -ms-opacity: 0.5;
+          -o-opacity: 0.5;
+          opacity: 0.5; }
       .in-process.in-processing article .secondary-text h3 {
         font-size: 0.85rem; }
       .in-process.in-processing article .secondary-text .number-text {
@@ -7409,6 +7425,13 @@ footer {
         border-radius: .25rem; }
         .in-process.in-processing article .status.pause {
           color: red; }
+      .in-process.in-processing article.in-status h3 {
+        font-size: 1rem; }
+      .in-process.in-processing article.in-status p {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 2.5rem; }
     .in-process.in-processing .group-items {
       display: flex;
       flex-wrap: wrap; }
@@ -7554,7 +7577,14 @@ footer {
         font-size: 3rem;
         line-height: 3rem; }
         .in-process.in-processing article .secondary-text .number-text .percent {
-          font-size: 2rem; } }
+          font-size: 2rem; }
+      .in-process.in-processing article.in-status h3 {
+        font-size: 1.4rem; }
+      .in-process.in-processing article.in-status p {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 2.5rem; } }
     @media (min-width: 1600px) {
       .in-process.in-processing .group-items .item figure .icons img {
         width: 4rem;
@@ -7597,6 +7627,22 @@ footer {
   .in-process.in-pending .tasks {
     background: #c6cacc;
     border-top: 0.15rem solid #fff; }
+    .in-process.in-pending .tasks.scan {
+      background: #c6cacc; }
+      .in-process.in-pending .tasks.scan .col-schedule {
+        color: #00467c; }
+      .in-process.in-pending .tasks.scan .in-scan {
+        padding-top: .5rem;
+        padding-bottom: .5rem; }
+        .in-process.in-pending .tasks.scan .in-scan h4 {
+          font-size: 0.9rem;
+          font-weight: 500;
+          margin: 0; }
+        .in-process.in-pending .tasks.scan .in-scan .desc-text {
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+          font-weight: 600;
+          margin: 0; }
     .in-process.in-pending .tasks article {
       width: 100%;
       display: block; }
@@ -7680,6 +7726,13 @@ footer {
       .in-process.in-pending .tasks:nth-child(even) .col-schedule {
         background: #e4edf5;
         color: #00467c; }
+      .in-process.in-pending .tasks:nth-child(even).scan {
+        background: #c6cacc; }
+        .in-process.in-pending .tasks:nth-child(even).scan .col-sp {
+          background: #2d3133; }
+        .in-process.in-pending .tasks:nth-child(even).scan .col-schedule {
+          color: #00467c;
+          background: #e1e3e4; }
       .in-process.in-pending .tasks:nth-child(even) .owl-carousel .item {
         color: #35618c; }
         .in-process.in-pending .tasks:nth-child(even) .owl-carousel .item figure .icons svg * {
@@ -7699,6 +7752,13 @@ footer {
       .in-process.in-pending .tasks:hover .col-schedule {
         background: #587ca0;
         color: #fff; }
+      .in-process.in-pending .tasks:hover.scan {
+        background: #c6cacc; }
+        .in-process.in-pending .tasks:hover.scan .col-sp {
+          background: #2d3133; }
+        .in-process.in-pending .tasks:hover.scan .col-schedule {
+          color: #00467c;
+          background: #e1e3e4; }
       .in-process.in-pending .tasks:hover .owl-carousel .item {
         color: #fff; }
         .in-process.in-pending .tasks:hover .owl-carousel .item figure .icons svg * {
@@ -7768,9 +7828,9 @@ footer {
       width: 7rem;
       max-width: 7rem; }
     .in-process.in-pending .tasks .col-schedule {
-      flex: 0 0 auto;
-      width: auto;
-      max-width: 100%; }
+      flex: 0 0 7rem;
+      width: 7rem;
+      max-width: 7rem; }
       .in-process.in-pending .tasks .col-schedule article h3 {
         font-size: 0.7rem;
         line-height: 0.7rem; }
@@ -7838,12 +7898,16 @@ footer {
       flex: 0 0 9rem;
       width: 9rem;
       max-width: 9rem; }
-    .in-process.in-pending .tasks .col-schedule article h3 {
-      font-size: 0.9rem;
-      line-height: 0.9rem; }
-    .in-process.in-pending .tasks .col-schedule article .number-text {
-      font-size: 2rem;
-      line-height: 2rem; }
+    .in-process.in-pending .tasks .col-schedule {
+      flex: 0 0 9rem;
+      width: 9rem;
+      max-width: 9rem; }
+      .in-process.in-pending .tasks .col-schedule article h3 {
+        font-size: 0.9rem;
+        line-height: 0.9rem; }
+      .in-process.in-pending .tasks .col-schedule article .number-text {
+        font-size: 2rem;
+        line-height: 2rem; }
     .in-process.in-pending .tasks .owl-carousel .item figure .icons svg {
       width: 4rem;
       max-width: 4rem; }

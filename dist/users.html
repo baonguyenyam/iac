@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#000000">
     <meta name="msapplication-navbutton-color" content="#000000">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-    <title>Admin - by IAC Group</title>
+    <title>Home - by IAC Group</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"><!-- ////////////// CSS Include ////////////// -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -30,6 +30,13 @@
     <header class="bg-light fixed-top">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="Logo"></a>
+          <div class="countdown d-none d-lg-block">
+            <div class="text-success mb-1">
+              Auto refresh after <strong class="time">1800</strong> 
+              seconds
+            </div>
+            <progress value="0" max="1800" id="progressBar"></progress>
+          </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
           <div class="collapse navbar-collapse" id="fullStackMenu">
             <div class="mr-auto"></div>
@@ -40,9 +47,6 @@
                     - FHR - Front of Door</a><a class="dropdown-item" href="#"> <strong>LINE 3</strong> 
                     - RHL - Front of Door</a><a class="dropdown-item" href="#"> <strong>LINE 4</strong> 
                     - RHR - Front of Door</a></div>
-              </li>
-              <li class="nav-item dropdown ml-lg-2"><a class="nav-link dropdown-toggle" id="dropdownFS" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Welcome<br><strong>Nguyen Pham</strong></span></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownFS"><a class="dropdown-item" href="#">Change password</a><a class="dropdown-item" href="#">Logout</a></div>
               </li>
             </ul>
           </div>
@@ -65,12 +69,9 @@
                     <h4 class="info-text">Name</h4>
                     <div class="desc-text">Denali SWB Premium</div>
                   </div>
-                  <div class="col-auto admin-icon align-items-center d-flex"><a class="btn btn-warning btn-sm my-2" href="javascript:void(0);" onclick="alert('Action link');">
-                      Edit content
-                       <i class="fa fa-cog"></i></a></div>
                   <div class="col-md-auto align-items-center d-flex">
-                    <div class="status pause w-100 mt-2 mt-md-0"><span class="animated flash infinite slower">
-                        Pause! <i class="fa fa-pause"></i></span></div>
+                    <div class="status w-100 mt-2 mt-md-0"><span class="animated flash infinite slower">
+                        In-processing... <i class="fa fa-cog fa-spin"></i></span></div>
                   </div>
                 </div>
               </article>
@@ -80,7 +81,7 @@
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/swb.svg" alt=""></div>
                       <figcaption>
-                        <h3 class="last-title">SWB Chevy</h3>
+                        <h3 class="last-title">SWB Denali</h3>
                         <p class="last-character">TGA4587989991600</p>
                       </figcaption>
                     </figure>
@@ -184,19 +185,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">338701</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">337676</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -269,6 +267,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -277,7 +284,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">438</div>
+                    <div class="number-text">249</div>
                   </div>
                 </div>
               </article>
@@ -287,19 +294,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">338419</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">766751</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -372,6 +376,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -380,7 +393,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">967</div>
+                    <div class="number-text">500</div>
                   </div>
                 </div>
               </article>
@@ -390,19 +403,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">739694</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">501937</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -475,6 +485,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -483,7 +502,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">954</div>
+                    <div class="number-text">675</div>
                   </div>
                 </div>
               </article>
@@ -493,19 +512,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">316519</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">750466</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -578,6 +594,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -586,7 +611,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">411</div>
+                    <div class="number-text">720</div>
                   </div>
                 </div>
               </article>
@@ -596,19 +621,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">339820</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">735295</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -681,6 +703,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -689,7 +720,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">255</div>
+                    <div class="number-text">413</div>
                   </div>
                 </div>
               </article>
@@ -699,19 +730,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">123011</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">648772</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -784,6 +812,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -792,7 +829,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">258</div>
+                    <div class="number-text">874</div>
                   </div>
                 </div>
               </article>
@@ -802,19 +839,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">346912</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">737634</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -887,6 +921,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -895,7 +938,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">845</div>
+                    <div class="number-text">313</div>
                   </div>
                 </div>
               </article>
@@ -905,19 +948,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">778052</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">757868</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -990,6 +1030,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -998,7 +1047,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">74</div>
+                    <div class="number-text">264</div>
                   </div>
                 </div>
               </article>
@@ -1008,19 +1057,16 @@
             <div class="col-schedule d-flex align-items-center">
               <article class="p-3">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12">
                     <h3 class="info-text">Schedule</h3>
-                    <div class="number-text">752711</div>
-                    <div class="admin-icon"><a class="btn btn-warning btn-sm mt-md-0" href="javascript:void(0);" onclick="alert('Action link');">
-                        Edit content
-                         <i class="fa fa-cog"></i></a></div>
+                    <div class="number-text">600536</div>
                   </div>
                 </div>
               </article>
             </div>
             <div class="col-12 col-md">
               <article>
-                <div class="owl-carousel owl-theme owl-admin">
+                <div class="owl-carousel owl-theme">
                   <div class="item">
                     <figure> 
                       <div class="icons"><img class="svg" src="./img/lwb.svg" alt=""></div>
@@ -1093,6 +1139,15 @@
                       </figcaption>
                     </figure>
                   </div>
+                  <div class="item">
+                    <figure> 
+                      <div class="icons"><img class="svg" src="./img/more.svg" alt=""></div>
+                      <figcaption>
+                        <h3 class="last-title">N/A</h3>
+                        <p class="last-character">8845454548744</p>
+                      </figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -1101,7 +1156,7 @@
                 <div class="row">
                   <div class="col-12 text-center">
                     <h3 class="info-text">Qty.</h3>
-                    <div class="number-text">970</div>
+                    <div class="number-text">268</div>
                   </div>
                 </div>
               </article>

@@ -1,0 +1,171 @@
+extends _layout/layout_gp12
+
+//- Default value
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+	- var href = "/index.html"
+
+//- body
+block body
+	section.in-process.in-processing
+		.container-fullwidth
+			.row.no-gutters
+				.col-md
+					article.p-2.bg-sen.color-main
+						.row
+							.col-sm-auto
+								//- figure
+									.icons
+										img.svg(src="./img/swb.svg", alt="")
+								h4.info-text Number
+								.desc-text.last-character 59813658
+							.col-sm 
+								h4.info-text Name
+								.desc-text Denali SWB Premium
+							.col-sm-auto 
+								h4.info-text Time
+								.desc-text 2:30 pm
+							//- .col-md-auto.align-items-center.d-flex
+								.status.w-100.mt-2.mt-md-0
+									span.animated.flash.infinite.slower In-processing...
+										| 
+										i.fa.fa-cog.fa-spin
+					article.px-2.pt-3.pb-2.in-status
+						.row
+							.col-sm-6.col-lg
+								//- figure 
+									.icons
+										img.svg(src="./img/swb.svg", alt="")
+								figure 
+									//- .icons
+										img.svg(src="./img/swb.svg", alt="")
+									figcaption
+										h3.last-title Approved
+										p 153
+							//- .col-sm-6.col-lg
+								figure 
+									.icons
+										img.svg(src="./img/grill.svg", alt="")
+									figcaption
+										h3.last-title Speaker Grill Jet Black
+										p.last-character EM-8979KD15688
+							//- .col-sm-6.col-lg
+								figure 
+									.icons
+										img.svg(src="./img/harness.svg", alt="")
+									figcaption
+										h3.last-title Wire Harness 
+										p.last-character 879445636
+							.col-sm-6.col-lg
+								figure 
+									//- .icons
+										img.svg(src="./img/speaker.svg", alt="")
+									figcaption
+										h3.last-title Racks
+										p 11
+							.col-sm-6.col-lg
+								figure 
+									//- .icons
+										img.svg(src="./img/speaker.svg", alt="")
+									figcaption
+										h3.last-title Rejected
+										p 6
+							.col-sm-6.col-lg
+								figure 
+									//- .icons
+										img.svg(src="./img/speaker.svg", alt="")
+									figcaption
+										h3.last-title Estimate
+										p 64/h
+							//- .item
+								figure 
+									.icons
+										img.svg(src="./img/deco-denali.svg", alt="")
+									figcaption
+										h3.last-title Speaker
+										p.last-character Denali S124
+							//- .item
+								figure 
+									.icons
+										img.svg(src="./img/switch.svg", alt="")
+									figcaption
+										h3.last-title Window switch bezel Window
+										p.last-character 8979879764
+							//- .item
+								figure 
+									.icons
+										img.svg(src="./img/lamp.svg", alt="")
+									figcaption
+										h3.last-title Pocket MAP Lamp
+										p.last-character 8845454548744
+							//- .item
+								figure 
+									.icons
+										img.svg(src="./img/diaper.svg", alt="")
+									figcaption
+										h3.last-title Diaper NVH
+										p.last-character 8845454548744
+				.col-md-auto.bg-yellow.d-flex.align-items-center
+					article.p-3.color-black
+						.row.mb-2
+							.col.primary-text
+								h3.info-text Checking...
+								.number-text 13
+									span.percent /14
+							//- .col-6
+								h3.info-text Rejected
+								.number-text 2
+							//- .col-6 
+								h3.info-text In build
+								.number-text 56
+						//- .row.secondary-text
+							.col
+								h3.info-text Rejected
+								.number-text 2
+									//- span.percent
+							//- .col-6 
+								h3.info-text Est.
+								.number-text 1h36
+	section.in-process.in-pending
+		.container-fullwidth
+			- for (i = 1; i < 10; i++)
+				- var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+				- var charactersLength = characters.length
+				- var price = Math.floor(Math.random() * (999 - 16) ) + 16
+				- for ( var m = 0; m < 5; m++ )
+					- var result = characters.charAt(Math.floor(Math.random() * charactersLength))
+					- var result1 = characters.charAt(Math.floor(Math.random() * charactersLength))
+					- var result3 = characters.charAt(Math.floor(Math.random() * charactersLength))
+					- var result2 = characters.charAt(Math.floor(Math.random() * charactersLength))
+					- var result4 = characters.charAt(Math.floor(Math.random() * charactersLength))
+				- var schedule = Math.floor(Math.random() * (999999 - 99999) ) + 99999
+				.row.no-gutters.tasks.scan
+					.col-schedule.d-flex.align-items-center
+						article.p-3
+							.row
+								.col-12
+									//- h3.info-text CODE
+									.number-text=result+result1+result2+result3+result4
+					.col-12.col-md.d-flex.align-items-center
+						article.color-main.container-fluid.in-scan
+							.row
+								.col-sm-auto
+									h4.info-text Number
+									.desc-text.last-character=schedule
+								.col-sm-auto
+									h4.info-text Rack
+									.desc-text.last-character 84865236
+								.col-sm
+									h4.info-text Code
+									.desc-text QWERTYUIOPJJHJG7878JHIIU47658KDFLGHE
+								.col-sm-auto.text-right
+									h4.info-text Time
+									.desc-text 2:30:45 pm
+					.col-sp.d-flex.align-items-center
+						article.p-3
+							.row
+								.col-12.text-center
+									//- h3.info-text Qty.
+									.number-text=(10-i)

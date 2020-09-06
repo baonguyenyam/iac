@@ -1,4 +1,4 @@
-extends _layout/layout
+extends _layout/layout_index
 
 //- Default value
 block variables
@@ -9,179 +9,14 @@ block variables
 
 //- body
 block body
-	section.in-process.in-processing
-		.container-fullwidth
-			.row.no-gutters
-				.col-lg
-					article.p-2.bg-sen.color-main
-						.row
-							.col-md-auto
-								h4.info-text Schedule
-								.desc-text 59813658
-							.col-md 
-								h4.info-text Name
-								.desc-text Denali SWB Premium
-							.col-md-auto.align-items-center.d-flex
-								.status.w-100.mt-2.mt-md-0
-									span.animated.flash.infinite.slower In-processing...
-										| 
-										i.fa.fa-cog.fa-spin
-					article.px-2.pt-3.pb-2
-						.group-items
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/swb.svg", alt="")
-									figcaption
-										h3.last-title SWB Denali
-										p.last-character TGA4587989991600
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/grill.svg", alt="")
-									figcaption
-										h3.last-title Speaker Grill Jet Black
-										p.last-character EM-8979KD15688
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/harness.svg", alt="")
-									figcaption
-										h3.last-title Wire Harness 
-										p.last-character 879445636
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/speaker.svg", alt="")
-									figcaption
-										h3.last-title Speaker
-										p.last-character Denali S124
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/deco-denali.svg", alt="")
-									figcaption
-										h3.last-title Speaker
-										p.last-character Denali S124
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/switch.svg", alt="")
-									figcaption
-										h3.last-title Window switch bezel Window
-										p.last-character 8979879764
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/lamp.svg", alt="")
-									figcaption
-										h3.last-title Pocket MAP Lamp
-										p.last-character 8845454548744
-							.item
-								figure 
-									.icons
-										img.svg(src="./img/diaper.svg", alt="")
-									figcaption
-										h3.last-title Diaper NVH
-										p.last-character 8845454548744
-				.col-lg-3.bg-yellow.d-flex.align-items-center
-					article.p-3.color-black
-						.row.mb-2
-							.col-6 
-								h3.info-text Qty.
-								.number-text 193
-							.col-6 
-								h3.info-text In build
-								.number-text 56
-						.row.secondary-text
-							.col-6 
-								h3.info-text Process
-								.number-text 56
-									span.percent %
-							.col-6 
-								h3.info-text Est.
-								.number-text 1h36
-	section.in-process.in-pending
-		.container-fullwidth
-			- for (i = 1; i < 10; i++)
-				- var schedule = Math.floor(Math.random() * (999999 - 99999) ) + 99999
-				- var price = Math.floor(Math.random() * (999 - 16) ) + 16
-				.row.no-gutters.tasks
-					.col-schedule.d-flex.align-items-center
-						article.p-3
-							.row
-								.col-12
-									h3.info-text Schedule
-									.number-text=schedule
-					.col-12.col-md
-						article
-							.owl-carousel.owl-theme
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/lwb.svg", alt="")
-										figcaption
-											h3.last-title LWB Chevy
-											p.last-character TGA4587989991600
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/grill.svg", alt="")
-										figcaption
-											h3.last-title Speaker Grill Jet Black
-											p.last-character EM-8979KD15688
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/harness.svg", alt="")
-										figcaption
-											h3.last-title Wire Harness 
-											p.last-character 879445636
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/speaker.svg", alt="")
-										figcaption
-											h3.last-title Speaker
-											p.last-character Denali S124
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/deco-denali.svg", alt="")
-										figcaption
-											h3.last-title Speaker
-											p.last-character Denali S124
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/switch.svg", alt="")
-										figcaption
-											h3.last-title Window switch bezel Window
-											p.last-character 8979879764
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/lamp.svg", alt="")
-										figcaption
-											h3.last-title Pocket MAP Lamp
-											p.last-character 8845454548744
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/diaper.svg", alt="")
-										figcaption
-											h3.last-title Diaper NVH
-											p.last-character 8845454548744
-								.item
-									figure 
-										.icons
-											img.svg(src="./img/more.svg", alt="")
-										figcaption
-											h3.last-title N/A
-											p.last-character 8845454548744
-					.col-sp.d-flex.align-items-center
-						article.p-3
-							.row
-								.col-12.text-center
-									h3.info-text Qty.
-									.number-text=price
+	section.container
+		.row.mt-5
+			.col-12.d-flex.justify-content-center.align-items-center 
+				h3 Demo
+		.row.mt-5
+			.col-12.text-center
+				a.btn.mb-2.btn-primary(href="./users.html") Users Demo
+				| &nbsp;
+				a.btn.mb-2.btn-warning(href="./admin.html") Admin Demo
+				| &nbsp;
+				a.btn.mb-2.btn-success(href="./gp12.html") GP12 Demo
