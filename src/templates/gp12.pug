@@ -63,7 +63,7 @@ block body
 									//- .icons
 										img.svg(src="./img/speaker.svg", alt="")
 									figcaption
-										h3.last-title Racks
+										h3.last-title Racks of 2nd
 										p 11
 							.col-sm-6.col-lg
 								figure 
@@ -112,7 +112,7 @@ block body
 						.row.mb-2
 							.col.primary-text
 								h3.info-text Checking...
-								.number-text 13
+								.number-text 9
 									span.percent /14
 							//- .col-6
 								h3.info-text Rejected
@@ -154,12 +154,29 @@ block body
 								.col-sm-auto
 									h4.info-text Number
 									.desc-text.last-character=schedule
-								.col-sm-auto
+								//- .col-sm-auto
 									h4.info-text Rack
 									.desc-text.last-character 84865236
-								.col-sm
+								.col-sm-auto
 									h4.info-text Code
-									.desc-text QWERTYUIOPJJHJG7878JHIIU47658KDFLGHE
+									.desc-text QWERTYUIOPU47658KDFLGHE
+								.col-sm-auto
+									//- h4.info-text EOL Checked
+									.desc-text.alert.alert-success
+										i.fa.fa-check 
+										| 
+										| EOL 
+								- if (i < 3)
+									.col-sm-auto
+										.desc-text.alert.alert-warning
+											| N/A 
+								- else 
+									.col-sm-auto
+										.desc-text.alert.alert-success
+											i.fa.fa-check 
+											| 
+											| GP12 
+								.col-sm
 								.col-sm-auto.text-right
 									h4.info-text Time
 									.desc-text 2:30:45 pm
